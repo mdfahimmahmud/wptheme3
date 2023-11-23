@@ -9,7 +9,7 @@
                 <div class="container clearfix">
 
                     <div class="col_half">
-                        Copyrights &copy; 2017 All Rights Reserved by Udemy.<br>
+                        Copyrights &copy; 2023 All Rights Reserved by WordPress.<br>
                         <div class="copyright-links">
                             <a href="#">Terms of Use</a> /
                             <a href="#">Privacy Policy</a>
@@ -33,7 +33,7 @@
                         <div class="clear"></div>
 
                         <i class="icon-envelope2"></i> info@email.com <span class="middot">&middot;</span>
-                        <i class="icon-headphones"></i> +55-5-5555-5555
+                        <i class="icon-headphones"></i> 01624919336
                     </div>
 
                 </div>
