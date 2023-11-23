@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
+	<meta http-equiv="content-type" content="text/html; charset=utf8>" />
 
 	<!-- Stylesheets
 	============================================= -->
@@ -49,29 +49,11 @@
                     ============================================= -->
                     <div id="top-social">
                         <ul>
-                            <?php
-
-                            if( get_theme_mod( 'ju_facebook_handle' ) ){
-                                ?><li><a href="https://facebook.com/<?php echo get_theme_mod( 'ju_facebook_handle' ); ?>" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li><?php
-                            }
-
-                            if( get_theme_mod( 'ju_twitter_handle' ) ){
-                                ?> <li><a href="https://twitter.com/<?php echo get_theme_mod( 'ju_twitter_handle' ); ?>" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li><?php
-                            }
-
-                            if( get_theme_mod( 'ju_instagram_handle' ) ){
-                                ?><li><a href="https://instagram.com/<?php echo get_theme_mod( 'ju_instagram_handle' ); ?>" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li><?php
-                            }
-
-                            if( get_theme_mod( 'ju_email' ) ){
-                                ?><li><a href="mailto:<?php echo get_theme_mod( 'ju_email' ); ?>" class="si-email3"><span class="ts-icon"><i class="icon-email3"></i></span><span class="ts-text"><?php echo get_theme_mod( 'ju_email' ); ?></span></a></li><?php
-                            }
-
-                            if( get_theme_mod( 'ju_phone_number' ) ){
-                                ?><li><a href="tel:+<?php echo get_theme_mod( 'ju_phone_number' ); ?>" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+<?php echo get_theme_mod( 'ju_phone_number' ); ?></span></a></li><?php
-                            }
-                            
-                            ?>
+                            <li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+                            <li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+                            <li><a href="#" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+                            <li><a href="tel:+55.55.5555555" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+55.55.5555555</span></a></li>
+                            <li><a href="mailto:info@email.com" class="si-email3"><span class="ts-icon"><i class="icon-email3"></i></span><span class="ts-text">info@email.com</span></a></li>
                         </ul>
                     </div><!-- #top-social end -->
 
@@ -90,25 +72,12 @@
                 <!-- Logo
                 ============================================= -->
                 <div id="logo">
-                    <?php
-
-                    if( has_custom_logo() ){
-                        the_custom_logo();
-                    }else{
-                        ?>
-                        <a href="<?php echo home_url( '/' ); ?>" class="standard-logo"><?php bloginfo( 'name' ); ?></a>
-                        <?php
-                    }
-
-                    ?>
+                    <a href="#" class="standard-logo">WordPress</a>
+                    <a href="#" class="retina-logo">WordPress</a>
                 </div><!-- #logo end -->
 
                 <div class="top-advert">
-                    <?php 
-                    if( function_exists( 'quads_ad' ) ){
-                        echo quads_ad([ 'location' => 'udemy_header' ]);
-                    }
-                    ?>
+                    <img src="images/magazine/ad.jpg">
                 </div>
 
             </div>
@@ -137,70 +106,57 @@
 
                         ?>
 
-                        <?php
-
-                        if( get_theme_mod( 'ju_header_show_cart' ) ){
-                            ?>
-                            <!-- Top Cart
-                            ============================================= -->
-                            <div id="top-cart">
-                                <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-                                <div class="top-cart-content">
-                                    <div class="top-cart-title">
-                                        <h4>Shopping Cart</h4>
-                                    </div>
-                                    <div class="top-cart-items">
-                                        <div class="top-cart-item clearfix">
-                                            <div class="top-cart-item-image">
-                                                <a href="#"><img src="images/shop/small/1.jpg" /></a>
-                                            </div>
-                                            <div class="top-cart-item-desc">
-                                                <a href="#">Blue Round-Neck Tshirt</a>
-                                                <span class="top-cart-item-price">$19.99</span>
-                                                <span class="top-cart-item-quantity">x 2</span>
-                                            </div>
+                        <!-- Top Cart
+                        ============================================= -->
+                        <div id="top-cart">
+                            <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
+                            <div class="top-cart-content">
+                                <div class="top-cart-title">
+                                    <h4>Shopping Cart</h4>
+                                </div>
+                                <div class="top-cart-items">
+                                    <div class="top-cart-item clearfix">
+                                        <div class="top-cart-item-image">
+                                            <a href="#"><img src="images/shop/small/1.jpg" /></a>
                                         </div>
-                                        <div class="top-cart-item clearfix">
-                                            <div class="top-cart-item-image">
-                                                <a href="#"><img src="images/shop/small/6.jpg"/></a>
-                                            </div>
-                                            <div class="top-cart-item-desc">
-                                                <a href="#">Light Blue Denim Dress</a>
-                                                <span class="top-cart-item-price">$24.99</span>
-                                                <span class="top-cart-item-quantity">x 3</span>
-                                            </div>
+                                        <div class="top-cart-item-desc">
+                                            <a href="#">Blue Round-Neck Tshirt</a>
+                                            <span class="top-cart-item-price">$19.99</span>
+                                            <span class="top-cart-item-quantity">x 2</span>
                                         </div>
                                     </div>
-                                    <div class="top-cart-action clearfix">
-                                        <span class="fleft top-checkout-price">$114.95</span>
-                                        <button class="button button-3d button-small nomargin fright">
-                                            View Cart
-                                        </button>
+                                    <div class="top-cart-item clearfix">
+                                        <div class="top-cart-item-image">
+                                            <a href="#"><img src="images/shop/small/6.jpg"/></a>
+                                        </div>
+                                        <div class="top-cart-item-desc">
+                                            <a href="#">Light Blue Denim Dress</a>
+                                            <span class="top-cart-item-price">$24.99</span>
+                                            <span class="top-cart-item-quantity">x 3</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div><!-- #top-cart end -->
-                            <?php
-                        }
+                                <div class="top-cart-action clearfix">
+                                    <span class="fleft top-checkout-price">$114.95</span>
+                                    <button class="button button-3d button-small nomargin fright">
+                                        View Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div><!-- #top-cart end -->
 
-                        if( get_theme_mod( 'ju_header_show_search' ) ){
-                            ?>
-                            <!-- Top Search
-                            ============================================= -->
-                            <div id="top-search">
-                                <a href="#" id="top-search-trigger">
-                                    <i class="icon-search3"></i><i class="icon-line-cross"></i>
-                                </a>
-                                <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-                                    <input type="text" name="s"
-                                        class="form-control" 
-                                        placeholder="<?php _e( 'Type &amp; Hit Enter..', 'udemy' ); ?>"
-                                        value="<?php the_search_query(); ?>">
-                                </form>
-                            </div><!-- #top-search end -->
-                            <?php
-                        }
-
-                        ?>
+                        <!-- Top Search
+                        ============================================= -->
+                        <div id="top-search">
+                            <a href="#" id="top-search-trigger">
+                                <i class="icon-search3"></i><i class="icon-line-cross"></i>
+                            </a>
+                            <form action="search.html" method="get">
+                                <input type="text" name="q"
+                                       class="form-control" placeholder="Type &amp; Hit Enter.."
+                                       value="">
+                            </form>
+                        </div><!-- #top-search end -->
                         
                     </div>
 
